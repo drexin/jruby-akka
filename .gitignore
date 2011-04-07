@@ -1,0 +1,4 @@
+pkg/
+javalib/
+.DS_STORE
+logs/
