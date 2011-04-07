@@ -5,10 +5,11 @@ require 'lib/jruby-akka.jar'
 Java::AkkaUntypedActor.createActorClass(JRuby.runtime)
 
 a = Actor.new do |m|
-  puts m
+  reply("Received: #{m}")
 end
 
-a << 2
-a << "Hier noch ein Test!\n\n"
+a.start
+
+puts a.send_request_reply_future("foo").result
 
 a.stop

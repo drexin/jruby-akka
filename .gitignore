@@ -1,4 +1,5 @@
 pkg/
 javalib/
-.DS_STORE
 logs/
+.DS_STORE
+.rvmrc
