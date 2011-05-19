@@ -17,8 +17,8 @@ import static org.jruby.runtime.Visibility.*;
 
 @JRubyClass(name="Actor")
 class AkkaUntypedActor extends RubyObject {
-  public static RubyClass createActorClass(final Ruby runtime) {
-    RubyClass actorc = runtime.defineClass("Actor", runtime.getObject(), ACTOR_ALLOCATOR);
+  public static RubyClass createActorClass(final Ruby runtime, RubyModule akkaModule) {
+    RubyClass actorc = runtime.defineClassUnder("Actor", runtime.getObject(), ACTOR_ALLOCATOR, akkaModule);
     actorc.setReifiedClass(AkkaUntypedActor.class);
     actorc.kindOf = new RubyModule.KindOf() {
       @Override

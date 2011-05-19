@@ -10,6 +10,6 @@ end
 
 a.start
 
-puts a.send_request_reply_future("foo").result
+puts a.send_request_reply "foo"
 
 a.stop

@@ -11,8 +11,8 @@ end
 desc "Compile the extension"
 task :compile => "pkg/classes" do |t|
   ant.javac :srcdir => "src", :destdir => t.prerequisites.first,
-    :source => "1.6", :target => "1.6", :debug => true,
-    :classpath => "${java.class.path}:${sun.boot.class.path}:javalib/akka-modules-1.0.jar"
+    :source => "1.5", :target => "1.5", :debug => true,
+    :classpath => "${java.class.path}:${sun.boot.class.path}:javalib/akka-actor-1.1.jar:javalib/scala-library.jar:javalib/akka-stm-1.1.jar"
 end
 
 desc "Build the jar"
