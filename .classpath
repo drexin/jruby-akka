@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<classpath>
+<classpathentry kind="src" path="src/main/java" including="**/*.java" />
+<classpathentry kind="src" path="src/test/scala" output="target/scala_2.9.0-1/test-classes" including="**/*.scala" />
+<classpathentry kind="src" path="src/main/scala" including="**/*.scala" />
+<classpathentry kind="lib" path="dependencies/lib_managed/compile/akka-stm-1.1.3.jar" />
+<classpathentry kind="lib" path="dependencies/lib_managed/compile/akka-actor-1.1.3.jar" />
+<classpathentry kind="lib" path="dependencies/lib_managed/compile/jruby-1.6.3.jar" />
+<classpathentry kind="lib" path="dependencies/lib_managed/compile/multiverse-alpha-0.6.2.jar" />
+<classpathentry kind="con" path="org.scala-ide.sdt.launching.SCALA_CONTAINER" />
+<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" />
+<classpathentry kind="output" path="target/scala_2.9.0-1/classes" />
+</classpath>

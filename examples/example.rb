@@ -1,10 +1,9 @@
 require 'java'
-require 'javalib/akka-modules-1.0.jar'
-require 'lib/jruby-akka.jar'
+require 'lib/jruby-akka.rb'
 
-Java::AkkaUntypedActor.createActorClass(JRuby.runtime)
+Java::AkkaLibrary.new.load(JRuby.runtime, false)
 
-a = Actor.new do |m|
+a = Akka::Actor.new do |m|
   reply("Received: #{m}")
 end
 

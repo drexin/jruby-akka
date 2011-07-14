@@ -11,8 +11,6 @@ import org.jruby.runtime.ThreadContext;
 import org.jruby.runtime.builtin.IRubyObject;
 import org.jruby.javasupport.JavaUtil;
 import org.jruby.runtime.Block;
-import org.jruby.RubyBoolean;
-import org.jruby.javasupport.JavaUtil;
 import static org.jruby.runtime.Visibility.*;
 
 @JRubyClass(name="Actor")

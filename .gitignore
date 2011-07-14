@@ -1,5 +1,11 @@
 pkg/
 javalib/
 logs/
-.DS_STORE
+*.DS_Store
+*.history
+*.scala_dependencies
 .rvmrc
+project/boot/
+target/
+dependencies/
+project/plugins/*/
